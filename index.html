@@ -1,3 +1,22 @@
+<!-- Here are a few suggestions for improving the code:
+
+Consider using semantic HTML tags (e.g. <header>, <main>, <footer>, etc.) to give the structure of the page more meaning.
+
+Use comments to add notes and explanations to the code. This will make the code easier to understand for yourself and others who may read it in the future.
+
+Instead of using multiple div elements with the class wrapper, consider using a single main element to wrap the content of the calculator.
+
+Use CSS to style the calculator buttons instead of using inline styles. This will make the HTML easier to read and maintain.
+
+Consider using a button element with a type attribute of "reset" for the clear button, as this is a common and expected behavior for a clear button.
+
+Use appropriate labels for the calculator buttons. For example, the "sin" button should be labeled as "sin" rather than just "sin".
+
+Consider using a data-* attribute to store the value of each button (e.g. data-value="+"). This will make it easier to retrieve the value of the button when it is clicked.
+
+Use descriptive and meaningful names for classes and IDs. This will make the code easier to understand and maintain.
+
+I hope these suggestions are helpful! Let me know if you have any questions.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,23 +58,146 @@
         <section class = "calc-buttons">
             <div class = "calc-button-row">
                 <button class = "calc-button">
-                    First Derivative
+                    Antiderivative
                 </button>
                 <button class = "calc-button">
-                    Second Derivative
-                </button>
-                <button class = "calc-button">
-                    Third Derivative
+                    Integral A to B
                 </button>
             </div>
         </section>
     </div>
-
+    <div class = "wrapper">
+        <section class = "calc-buttons-nums">
+            -----------------------------------------------------------------
+        </section>
+        <section class = "calc-buttons-operators">
+            Arithmetic
+        </section>
+            <div class = "calc-button-row">
+                <button class = "calc-button">
+                    *
+                </button>  
+                <button class = "calc-button">
+                    /
+                </button>  
+                <button class = "calc-button">
+                    +
+                </button>  
+                <button class = "calc-button">
+                    -
+                </button>  
+                <button class = "calc-button">
+                    Log
+                </button>  
+                <button class = "calc-button">
+                    Log(e)
+                </button>  
+                <button class = "calc-button">
+                    e^
+                </button>  
+                <button class = "calc-button">
+                    sqrt
+                </button>  
+                <button class = "calc-button">
+                    ^2
+                </button>
+            <section class = "calc-buttons-nums-3">
+                <div class = "calc-button-row">
+                    <button class = "calc-button">
+                        1
+                    </button>  
+                    <button class = "calc-button">
+                        2
+                    </button>  
+                    <button class = "calc-button">
+                        3
+                    </button>
+                    <button class = "calc-button">
+                        (
+                    </button>  
+                    <button class = "calc-button">
+                        )
+                    </button>  
+                    <button class = "calc-button">
+                        sin
+                    </button>
+                    <button class = "calc-button">
+                        cos
+                    </button>  
+                    <button class = "calc-button">
+                        tan
+                    </button>  
+                    <button class = "calc-button">
+                        inv
+                    </button>
+                    <button class = "calc-button">
+                        ^
+                    </button>   
+                </div>
+            </section>
+            <section class = "calc-buttons-nums-3">
+                <div class = "calc-button-row">
+                    <button class = "calc-button">
+                        4
+                    </button>  
+                    <button class = "calc-button">
+                        5
+                    </button>  
+                    <button class = "calc-button">
+                        6
+                    </button>
+                    <button class = "calc-button">
+                        pi
+                    </button>  
+                    <button class = "calc-button">
+                        e
+                    </button>  
+                    <button class = "calc-button">
+                        arcsin
+                    </button>
+                    <button class = "calc-button">
+                        arccos
+                    </button>  
+                    <button class = "calc-button">
+                        arctan
+                    </button>  
+                </div>
+            </section>
+            <section class = "calc-buttons-nums-3">
+                <div class = "calc-button-row">
+                    <button class = "calc-button">
+                        7
+                    </button>  
+                    <button class = "calc-button">
+                        8
+                    </button>  
+                    <button class = "calc-button">
+                        9
+                    </button> 
+                    <button class = "calc-button">
+                        0
+                    </button>
+                    <button class = "calc-button">
+                        <b>DEL</b>
+                    </button>  
+                    <button class = "calc-button">
+                        <b>=</b>
+                    </button>  
+                    <button class = "calc-button">
+                        <b>'X'</b>
+                    </button>     
+                    <button class = "calc-button">
+                        <b>CLEAR</b>
+                    </button> 
+                </div>
+            </section>
+            </div>
+</body>
     <footer>
         <p>Project by Sanjay Mukhyala, 2023</p>
     </footer>
       
 
     <script src="script.js"></script>
-</body>
+
 </html>
